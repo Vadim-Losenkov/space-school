@@ -1,4 +1,4 @@
-html{
+html {
   box-sizing: border-box;
 }
 
@@ -14,7 +14,8 @@ a {
   color: inherit;
 }
 
-ul, li {
+ul,
+li {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -38,15 +39,15 @@ button {
 }
 
 body {
-  min-width: 1920px;
-  font-family: 'Roboto', sans-serif;
+  // min-width: 1920px;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   color: #000;
 }
 
-.container{
+.container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
@@ -66,6 +67,7 @@ body {
   font-weight: 700;
   font-family: "Source Sans Pro", Arial;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .title {
@@ -75,4 +77,15 @@ body {
   font-weight: 700;
   font-family: "Playfair Display", Arial;
   text-align: center;
+}
+
+.button {
+  padding: 15px 45px;
+  background-color: $purp;
+  margin: 0 auto;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+  border-radius: 30px;
+  font-weight: 700;
 }
