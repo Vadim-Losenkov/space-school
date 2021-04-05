@@ -1,0 +1,78 @@
+html{
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+p {
+  font-size: 16px;
+  line-height: 28px;
+  color: #b7b7b7;
+  font-weight: 400;
+  font-family: "Source Sans Pro", Arial;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+
+body {
+  min-width: 1920px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container-fluid {
+  max-width: 1700px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.suptitle {
+  font-size: 12px;
+  letter-spacing: 1px;
+  line-height: 72px;
+  color: $purp;
+  font-weight: 700;
+  font-family: "Source Sans Pro", Arial;
+  text-align: center;
+}
+
+.title {
+  font-size: 60px;
+  line-height: 72px;
+  color: #231f20;
+  font-weight: 700;
+  font-family: "Playfair Display", Arial;
+  text-align: center;
+}
