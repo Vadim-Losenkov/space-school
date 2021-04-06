@@ -5,12 +5,35 @@
 @import "global";
 
 .header {
+  .logo {
+    font-size: 26px;
+    color: #fff;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   &__burger {
-    span {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    div {
       height: 3px;
       width: 30px;
       background-color: #fff;
-      
+      margin-bottom: 5px;
+      border-radius: 4px;
+    }
+
+    &-first {
+      margin-left: 8px;
+    }
+    &-second {
+      margin-left: 12px;
+    }
+    &-last {
+      margin-left: 10px;
     }
   }
 }
