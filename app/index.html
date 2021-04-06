@@ -16,10 +16,12 @@
         <div class="container-fluid">
           <div class="header__inner">
             <div class="logo">
-
+              Header logo
             </div>
             <div class="header__burger">
-
+              <span class="header__burger-first"></span>
+              <span class="header__burger-second"></span>
+              <span class="header__burger-last"></span>
             </div>
           </div>
         </div>
@@ -59,13 +61,15 @@
               consectetur sed sed felis.
             </p>
           </div>
-          <div class="info__text-btn">
+          <button class="info__text-btn button">
             More About US
-          </div>
+          </button>
         </div>
         <div class="info__items">
           <div class="info__item">
-            <div class="info__item-title">Creative Direction.</div>
+            <div class="info__item-title">
+              Creative Direction.
+            </div>
             <p class="info__item-text">
               Vivamus eu neque ut seam mal suada consectetur sed sed felis Vestibulum ante ipsum primis in faucibus
               ipsum orci.
@@ -75,7 +79,9 @@
             </a>
           </div>
           <div class="info__item">
-            <div class="info__item-title">Creative Direction.</div>
+            <div class="info__item-title">
+              Creative Direction.
+            </div>
             <p class="info__item-text">
               Vivamus eu neque ut seam mal suada consectetur sed sed felis Vestibulum ante ipsum primis in faucibus
               ipsum orci.
@@ -85,7 +91,9 @@
             </a>
           </div>
           <div class="info__item">
-            <div class="info__item-title">Creative Direction.</div>
+            <div class="info__item-title">
+              Creative Direction.
+            </div>
             <p class="info__item-text">
               Vivamus eu neque ut seam mal suada consectetur sed sed felis Vestibulum ante ipsum primis in faucibus
               ipsum orci.
@@ -95,7 +103,9 @@
             </a>
           </div>
           <div class="info__item">
-            <div class="info__item-title">Creative Direction.</div>
+            <div class="info__item-title">
+              Creative Direction.
+            </div>
             <p class="info__item-text">
               Vivamus eu neque ut seam mal suada consectetur sed sed felis Vestibulum ante ipsum primis in faucibus
               ipsum orci.
@@ -115,17 +125,42 @@
     <div class="works__title title">
       Some Of Our Work.
     </div>
-    <div class="container-fluid">
-      <div class="works__inner">
-        <div class="works__items">
-          <div class="works__item-main">
-
-          </div>
-          <div class="works__item-box">
-            <div class="works__item"></div>
-            <div class="works__item"></div>
-            <div class="works__item"></div>
-            <div class="works__item"></div>
+    <div class="works__wrapper">
+      <div class="container-fluid">
+        <div class="works__inner">
+          <div class="works__items">
+            <a href="#top-popup" data-effect="mfp-zoom-in" class="works__item-main show-image">
+              <img src="images/works-img-1.jpg" alt="">
+              <div class="works-main__none">
+                Смотреть фото
+              </div>
+            </a>
+            <div class="works__item-box">
+              <div class="works__item">
+                <img src="images/works-img-2.jpg" alt="">
+                <div class="works-main__none">
+                  Смотреть фото
+                </div>
+              </div>
+              <div class="works__item">
+                <img src="images/works-img-2.jpg" alt="">
+                <div class="works-main__none">
+                  Смотреть фото
+                </div>
+              </div>
+              <div class="works__item">
+                <img src="images/works-img-2.jpg" alt="">
+                <div class="works-main__none">
+                  Смотреть фото
+                </div>
+              </div>
+              <div class="works__item">
+                <img src="images/works-img-2.jpg" alt="">
+                <div class="works-main__none">
+                  Смотреть фото
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -142,7 +177,9 @@
               Morbi viverra lorem at neque tincidunt cons equat. ”
             </div>
             <div class="testimonials__item-name">
-              - Bandar El-Thobety, Agency
+              <span class="testimonials__item-nametext">
+                - Bandar El-Thobety, Agency
+              </span>
             </div>
           </div>
           <div class="testimonials__item">
@@ -152,7 +189,9 @@
               Morbi viverra lorem at neque tincidunt cons equat. ”
             </div>
             <div class="testimonials__item-name">
-              - Bandar El-Thobety, Agency
+              <span class="testimonials__item-nametext">
+                - Bandar El-Thobety, Agency
+              </span>
             </div>
           </div>
           <div class="testimonials__item">
@@ -162,7 +201,9 @@
               Morbi viverra lorem at neque tincidunt cons equat. ”
             </div>
             <div class="testimonials__item-name">
-              - Bandar El-Thobety, Agency
+              <span class="testimonials__item-nametext">
+                - Bandar El-Thobety, Agency
+              </span>
             </div>
           </div>
         </div>
@@ -177,13 +218,32 @@
       <div class="question__title title">
         Want to work with us?
       </div>
-      <div class="question__btn">
-        Contact Us
+      <div class="question__button">
+        <button class="question__btn button">
+          Contact Us
+        </button>
       </div>
     </div>
   </div>
 
+  <footer class="footer">
+
+  </footer>
+
+  <div id="top-popup" class="white-popup mfp-with-anim mfp-hide">
+    <h2 class="top-popup__title">LaslesVPN</h2>
+    <p class="top-popup__text">
+      Оформить подписку на 1 месяц за $10?
+    </p>
+    <input class="top-popup__input" type="text" placeholder="введите ваш IP: " />
+    <button class="top-popup__button close-btn-i">
+      оформить
+    </button>
+  </div>
+
   <script src="js/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/popup.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 

@@ -29,6 +29,7 @@ p {
   font-family: "Source Sans Pro", Arial;
   margin: 0;
   padding: 0;
+  margin-bottom: 35px;
 }
 
 button {
@@ -39,7 +40,7 @@ button {
 }
 
 body {
-  // min-width: 1920px;
+  min-width: 1500px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -56,13 +57,13 @@ body {
 .container-fluid {
   max-width: 1700px;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 10px;
 }
 
 .suptitle {
   font-size: 12px;
   letter-spacing: 1px;
-  line-height: 72px;
+  line-height: 24px;
   color: $purp;
   font-weight: 700;
   font-family: "Source Sans Pro", Arial;
@@ -72,7 +73,7 @@ body {
 
 .title {
   font-size: 60px;
-  line-height: 72px;
+  line-height: 64px;
   color: #231f20;
   font-weight: 700;
   font-family: "Playfair Display", Arial;
@@ -88,4 +89,49 @@ body {
   font-size: 12px;
   border-radius: 30px;
   font-weight: 700;
+}
+
+
+
+.top__wrapper {
+  background-image: url("../images/top-bg.jpg");
+  @extend %bgi;
+  padding: 40px 0;
+  padding-bottom: 100px;
+}
+
+.popup {
+  position: relative;
+  background: #FFF;
+  padding: 25px;
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: 5px;
+  z-index: 2000;
+}
+
+.top-popup {
+  &__text {
+    margin-bottom: 30px;
+  }
+  &__input {
+    outline: none;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid  #ccc;
+    padding: 5px;
+    margin-bottom: 10px;
+    &.signup {
+      margin-bottom: 35px;
+    }
+  }
+  &__button {
+    background-color: $purp;
+    padding: 10px 25px;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+  }
 }

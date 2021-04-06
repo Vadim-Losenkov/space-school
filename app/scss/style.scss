@@ -4,6 +4,17 @@
 @import "mixins";
 @import "global";
 
+.header {
+  &__burger {
+    span {
+      height: 3px;
+      width: 30px;
+      background-color: #fff;
+      
+    }
+  }
+}
+
 .top {
   background-image: url("../images/top-bg.jpg");
   background-repeat: no-repeat;
@@ -17,6 +28,8 @@
 .header {
   position: absolute;
   top: 0;
+  width: 100%;
+  padding: 35px 0;
 }
 
 .top__main {
@@ -41,4 +54,217 @@
 
 .info {
   padding: 120px 0;
+  box-shadow: 2px 2px 30px rgba(#000, .15);
+  margin-bottom: 140px;
+  &__text {
+    max-width: 600px;
+    width: 100%;
+  }
+  &__text-title {
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  &__inner {
+    display: flex;
+    align-items: flex-start;
+  }
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    width: 100%;
+  }
+  &__item {
+    margin: 0 15px 30px;
+    width: 220px;
+    box-shadow: 2px 2px 20px rgba(#000, .1);
+    padding: 30px;
+    border-bottom: 3px solid $purp;
+  }
+  &__item-link {
+    color: $purp;
+    padding-right: 20px;
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background-image: url('../images/icons/arrow-right.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      width: 10px;
+      height: 10px;
+    }
+  }
+  &__item-title {
+    margin-bottom: 10px;
+  }
+  &__item-text {
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 20px;
+  }
+}
+
+.works {
+  &__title {
+    margin-bottom: 140px;
+  }
+  &__wrapper {
+    background-color: $gray;
+    padding: 120px 0;
+  }
+  &__items {
+    display: flex;
+    align-items: flex-start;
+  }
+  &__item-box {
+    width: 55%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__item-main {
+    width: 45%;
+    margin-right: 15px;
+    border-radius: 20px;
+    position: relative;
+    img {
+      border-radius: 20px;
+      width: 100%;
+      opacity: 1;
+      transition: all .3s;
+    }
+    &:hover {
+      transition: all .3s;
+      background: $purp;
+      .works-main__none {
+        opacity: 1;
+      }
+      img {
+        transition: all .3s;
+        opacity: 0;
+      }
+    }
+  }
+  &__item {
+    margin: 0 15px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    position: relative;
+    img {
+      border-radius: 20px;
+      width: 390px;
+      opacity: 1;
+      transition: all .3s;
+    }
+    &:hover {
+      transition: all .3s;
+      background: $purp;
+      .works-main__none {
+        opacity: 1;
+      }
+      img {
+        transition: all .3s;
+        opacity: 0;
+      }
+    }
+  }
+  &-main__none {
+    opacity: 0;
+    line-height: 36px;
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Playfair Display";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.testimonials {
+  background-image: url('../images/slider-bg.jpg');
+  width: 100%;
+  padding: 100px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  
+  &__slider {
+    max-width: 980px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+    position: relative;
+  }
+  &__item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  &__item-text {
+    width: 100%;
+    line-height: 36px;
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Playfair Display";
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  &__item-name {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  &__item-nametext {
+    margin: 0 auto;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  
+  .slick-dots {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    button {
+      font-size: 0;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: rgba(#fff, .5);
+    }
+
+    li.slick-active button {
+      background-color: #fff;
+    }
+    li + li {
+      margin-left: 23px;
+    }
+  }
+}
+
+.question {
+  padding: 150px 0;
+  &__button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+}
+
+.footer {
+  height: 450px;
+  background-color: $gray;
 }
