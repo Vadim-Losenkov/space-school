@@ -65,52 +65,54 @@
             More About US
           </button>
         </div>
-        <div class="info__items">
-          <div class="info__item">
-            <div class="info__item-title">
+        
+        <div class="dynamic-title"></div>
+        <div class="info__items" data-dynamic="list">
+          <div class="info__item" data-dynamic-id="1">
+            <div class="info__item-title" data-dynamic="title">
               Creative Direction.
             </div>
-            <p class="info__item-text">
+            <p class="info__item-text" data-dynamic="descr">
               Vivamus eu neque ut seam mal suada consectetur sed sed felis Vestibulum ante ipsum primis in faucibus
               ipsum orci.
             </p>
-            <a href="#" class="info__item-link">
+            <a href="dynamic.html" class="info__item-link" data-dynamic="link">
               Learn More
             </a>
           </div>
-          <div class="info__item">
-            <div class="info__item-title">
+          <div class="info__item" data-dynamic-id="2">
+            <div class="info__item-title" data-dynamic="title">
               Creative Direction.
             </div>
-            <p class="info__item-text">
+            <p class="info__item-text" data-dynamic="descr">
               Vivamus eu neque ut seam mal suada consectetur sed sed felis Vestibulum ante ipsum primis in faucibus
               ipsum orci.
             </p>
-            <a href="#" class="info__item-link">
+            <a href="#" class="info__item-link" data-dynamic="link">
               Learn More
             </a>
           </div>
-          <div class="info__item">
-            <div class="info__item-title">
+          <div class="info__item" data-dynamic-id="3">
+            <div class="info__item-title" data-dynamic="title">
               Creative Direction.
             </div>
-            <p class="info__item-text">
+            <p class="info__item-text" data-dynamic="descr">
               Vivamus eu neque ut seam mal suada consectetur sed sed felis Vestibulum ante ipsum primis in faucibus
               ipsum orci.
             </p>
-            <a href="#" class="info__item-link">
+            <a href="#" class="info__item-link" data-dynamic="link">
               Learn More
             </a>
           </div>
-          <div class="info__item">
-            <div class="info__item-title">
+          <div class="info__item" data-dynamic-id="4">
+            <div class="info__item-title" data-dynamic="title">
               Creative Direction.
             </div>
-            <p class="info__item-text">
+            <p class="info__item-text" data-dynamic="descr">
               Vivamus eu neque ut seam mal suada consectetur sed sed felis Vestibulum ante ipsum primis in faucibus
               ipsum orci.
             </p>
-            <a href="#" class="info__item-link">
+            <a href="#" class="info__item-link" data-dynamic="link">
               Learn More
             </a>
           </div>
@@ -129,37 +131,37 @@
       <div class="container-fluid">
         <div class="works__inner">
           <div class="works__items">
-            <a href="#top-popup" data-effect="mfp-zoom-in" class="works__item-main show-image">
+            <a href="#img-popup-1" data-effect="mfp-zoom-in" class="works__item-main show-image">
               <img src="images/works-img-1.jpg" alt="">
               <div class="works-main__none">
                 Смотреть фото
               </div>
             </a>
             <div class="works__item-box">
-              <div class="works__item">
+              <a href="#img-popup-2" data-effect="mfp-zoom-in" class="show-image works__item">
                 <img src="images/works-img-2.jpg" alt="">
                 <div class="works-main__none">
                   Смотреть фото
                 </div>
-              </div>
-              <div class="works__item">
+              </a>
+              <a href="#img-popup-2" data-effect="mfp-zoom-in" class="show-image works__item">
                 <img src="images/works-img-2.jpg" alt="">
                 <div class="works-main__none">
                   Смотреть фото
                 </div>
-              </div>
-              <div class="works__item">
+              </a>
+              <a href="#img-popup-2" data-effect="mfp-zoom-in" class="show-image works__item">
                 <img src="images/works-img-2.jpg" alt="">
                 <div class="works-main__none">
                   Смотреть фото
                 </div>
-              </div>
-              <div class="works__item">
+              </a>
+              <a href="#img-popup-2" data-effect="mfp-zoom-in" class="show-image works__item">
                 <img src="images/works-img-2.jpg" alt="">
                 <div class="works-main__none">
                   Смотреть фото
                 </div>
-              </div>
+              </a>
             </div>
           </div>
         </div>
@@ -230,15 +232,11 @@
 
   </footer>
 
-  <div id="top-popup" class="white-popup mfp-with-anim mfp-hide">
-    <h2 class="top-popup__title">LaslesVPN</h2>
-    <p class="top-popup__text">
-      Оформить подписку на 1 месяц за $10?
-    </p>
-    <input class="top-popup__input" type="text" placeholder="введите ваш IP: " />
-    <button class="top-popup__button close-btn-i">
-      оформить
-    </button>
+  <div id="img-popup-1" class="white-popup mfp-with-anim mfp-hide">
+    <img class="img-popup" src="images/works-img-1.jpg" alt="">
+  </div>
+  <div id="img-popup-2" class="white-popup mfp-with-anim mfp-hide">
+    <img class="img-popup" src="images/works-img-2.jpg" alt="">
   </div>
 
   <script src="js/jquery.min.js"></script>

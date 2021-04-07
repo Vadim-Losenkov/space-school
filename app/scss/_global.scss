@@ -45,6 +45,9 @@ body {
   font-size: 14px;
   line-height: 24px;
   color: #000;
+  overflow-x: hidden;
+  // max-width: 320px;
+  // min-width: 700px;
 }
 
 .container {
@@ -77,6 +80,18 @@ body {
   font-weight: 700;
   font-family: "Playfair Display", Arial;
   text-align: center;
+}
+@media (max-width: 768px) {
+  .title {
+    font-size: 42px;
+    line-height: 46px;
+  }
+}
+@media (max-width: 468px) {
+  .title {
+    font-size: 32px;
+    line-height: 36px;
+  }
 }
 
 .button {
@@ -133,4 +148,8 @@ body {
     display: block;
     margin-left: auto;
   }
+}
+
+.img-popup {
+  width: 100%;
 }
