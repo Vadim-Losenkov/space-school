@@ -13,6 +13,22 @@
 }
 
 
+@media (max-width: 768px) {
+  .works__items {
+    display: flex;
+    a {
+      height: 100%;
+    }
+  }
+  .works__item-box {
+    display: flex;
+    height: 100%;
+    a {
+      height: 100%;
+    }
+  }
+}
+
 @media (max-width: 700px) {
   .testimonials {
     padding: 50px 0;
@@ -23,6 +39,11 @@
   }
 }
 
+@media (max-width: 600px) {
+  .info__items {
+    min-width: 100%;
+  }
+}
 @media (max-width: 500px) {
   .testimonials__item-text {
     font-size: 14px;

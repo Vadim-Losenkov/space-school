@@ -119,8 +119,7 @@
   &__items {
     display: flex;
     flex-wrap: wrap;
-    //min-width: 540px;
-    min-width: 100%;
+    min-width: 540px;
     max-width: 540px;
   }
   &__item {
@@ -167,27 +166,27 @@
     padding: 120px 0;
   }
   &__items {
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    // display: flex;
+    // align-items: flex-start;
+    // flex-wrap: wrap;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
   &__item-box {
-    //min-width: 650px;
-    max-width: 700px;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 550px;
+    grid-gap: 20px;
   }
   &__item-main {
-    //min-width: 550px;
     margin-right: 15px;
     border-radius: 20px;
     position: relative;
-    img {
-      border-radius: 20px;
-      width: 80%;
-      opacity: 1;
-      transition: all .3s;
-    }
+    background-image: url('../images/works-img-1.jpg');
+    @extend %bgi;
+    height: 100%;
+    z-index: 1;
     &:hover {
       transition: all .3s;
       background: $purp;
@@ -205,12 +204,11 @@
     margin-bottom: 30px;
     border-radius: 20px;
     position: relative;
-    img {
-      border-radius: 20px;
-      width: 300px;
-      opacity: 1;
-      transition: all .3s;
-    }
+    
+    background-image: url('../images/works-img-2.jpg');
+    @extend %bgi;
+    height: 100%;
+    z-index: 1;
     &:hover {
       transition: all .3s;
       background: $purp;
