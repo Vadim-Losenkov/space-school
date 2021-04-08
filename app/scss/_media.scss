@@ -27,6 +27,10 @@
       height: 100%;
     }
   }
+
+  .video {
+    right: -210px;
+  }
 }
 
 @media (max-width: 700px) {
@@ -42,6 +46,9 @@
 @media (max-width: 600px) {
   .info__items {
     min-width: 100%;
+  }
+  .video {
+    right: -400px;
   }
 }
 @media (max-width: 500px) {
