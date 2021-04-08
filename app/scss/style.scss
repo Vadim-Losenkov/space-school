@@ -165,11 +165,20 @@
     background-color: $gray;
     padding: 120px 0;
   }
+  &__items-mobile {
+    a {
+      width: 80%;
+      max-height: 400px;
+      background-size: contain;
+      &:hover {
+        display: none;
+      }
+    }
+    .works-main__none {
+      display: none;
+    }
+  }
   &__items {
-    // display: flex;
-    // align-items: flex-start;
-    // flex-wrap: wrap;
-
     display: grid;
     grid-template-columns: 1fr 1fr;
   }

@@ -20,7 +20,7 @@ $(function() {
   $('.header__burger').on('click', () => $('.header__burger').toggleClass('open'))
 })
 
-
+window.appArray = []
 class Dynamic {
   constructor(list) {
     this._list = document.querySelector(list)
@@ -43,11 +43,12 @@ class Dynamic {
   }
   
   render(dataObject) {
-    return `
+    window.appArray.push(`
       <div class="dynamic-title">${dataObject.title}</div>
       <div class="dynamic-descr">${dataObject.descr}</div>
       <div class="dynamic-text"></div>
-    `
+    `)
+    console.log(window.appArray);
   }
 }
 
