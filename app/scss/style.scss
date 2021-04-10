@@ -224,6 +224,8 @@
       background: $purp;
       .works-main__none {
         opacity: 1;
+        width: 100%;
+        text-align: center;
       }
       img {
         transition: all .3s;
@@ -246,6 +248,8 @@
       background: $purp;
       .works-main__none {
         opacity: 1;
+        width: 100%;
+        text-align: center;
       }
       img {
         transition: all .3s;
@@ -385,6 +389,11 @@
   width: auto;
   height: auto;
   background-position: center;
+}
+
+.popup-video {
+  width: 100%;
+  border-radius: 10px;
 }
 
 .about__title {

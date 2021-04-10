@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -95,7 +96,7 @@ body {
 }
 
 .button {
-  padding: 15px;
+  padding: 12px 50px;
   background-color: $purp;
   margin: 0 auto;
   color: #fff;
@@ -105,7 +106,9 @@ body {
   font-weight: 700;
 }
 
-
+a.button {
+  padding: 5px 50px;
+}
 
 .top__wrapper {
   background-image: url("../images/top-bg.jpg");
@@ -116,9 +119,9 @@ body {
 
 .popup {
   position: relative;
-  background: #FFF;
+  background: #fff;
   padding: 25px;
-  max-width: 80%;
+  max-width: 50%;
   margin: 0 auto;
   border-radius: 5px;
   z-index: 2000;
@@ -132,7 +135,7 @@ body {
     outline: none;
     width: 100%;
     border-radius: 5px;
-    border: 1px solid  #ccc;
+    border: 1px solid #ccc;
     padding: 5px;
     margin-bottom: 10px;
     &.signup {
@@ -152,4 +155,30 @@ body {
 
 .img-popup {
   width: 100%;
+}
+
+.scroll-top {
+  background-color: #000;
+  // background-color: $purp;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 9998;
+  box-shadow: 0px 0px 5px rgba(#fff, 0.5);
+  &::before {
+    content: "";
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+    background-image: url("../images/icons/arrow-right.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 15px;
+    height: 15px;
+  }
 }
