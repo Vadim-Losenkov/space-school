@@ -15,17 +15,11 @@
 
 @media (max-width: 768px) {
   .works__items {
-    display: flex;
-    a {
-      height: 100%;
-    }
+    display: none;
+    overflow-x: hidden;
   }
-  .works__item-box {
-    display: flex;
-    height: 100%;
-    a {
-      height: 100%;
-    }
+  .works__items-mobile {
+    display: block;
   }
 
   .video {
