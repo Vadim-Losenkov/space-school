@@ -123,14 +123,10 @@ a.button {
   position: relative;
   background: #fff;
   padding: 25px;
-  min-width: 50%;
+  width: 100%;
   margin: 0 auto;
   border-radius: 8px;
   z-index: 2000;
-}
-
-.img-popup {
-  width: 100%;
 }
 
 .scroll-top {
@@ -204,4 +200,8 @@ a.button {
       height: 15px;
     }
   }
+}
+
+.mfp-inline-holder .mfp-content, .mfp-ajax-holder .mfp-content {
+  width: auto;
 }
