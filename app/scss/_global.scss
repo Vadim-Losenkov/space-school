@@ -42,6 +42,7 @@ button {
 
 body {
   font-family: "Roboto", sans-serif;
+  min-width: 320px;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -55,6 +56,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+  position: relative;
 }
 
 .container-fluid {
@@ -121,36 +123,10 @@ a.button {
   position: relative;
   background: #fff;
   padding: 25px;
-  max-width: 50%;
+  min-width: 50%;
   margin: 0 auto;
-  border-radius: 5px;
+  border-radius: 8px;
   z-index: 2000;
-}
-
-.top-popup {
-  &__text {
-    margin-bottom: 30px;
-  }
-  &__input {
-    outline: none;
-    width: 100%;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    padding: 5px;
-    margin-bottom: 10px;
-    &.signup {
-      margin-bottom: 35px;
-    }
-  }
-  &__button {
-    background-color: $purp;
-    padding: 10px 25px;
-    color: #fff;
-    font-weight: 700;
-    border-radius: 5px;
-    display: block;
-    margin-left: auto;
-  }
 }
 
 .img-popup {
@@ -158,8 +134,7 @@ a.button {
 }
 
 .scroll-top {
-  background-color: #000;
-  // background-color: $purp;
+  background-color: $purp;
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -167,18 +142,66 @@ a.button {
   bottom: 50px;
   right: 50px;
   z-index: 9998;
-  box-shadow: 0px 0px 5px rgba(#fff, 0.5);
+  box-shadow: 0px 0px 5px rgba(#fff, 0.3);
   &::before {
     content: "";
     position: absolute;
     right: 50%;
     top: 50%;
-    transform: translate(50%, -50%);
-    background-image: url("../images/icons/arrow-right.svg");
+    transform: translate(50%, -50%) rotate(180deg);
+    background-image: url("../images/icons/angle-down-b.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     width: 15px;
     height: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .scroll-top {
+    bottom: 35px;
+    right: 35px;
+  }
+}
+
+.dropdown {
+  background-color: #fff;
+  z-index: 10;
+  position: absolute;
+  top: 80px;
+  border-bottom: 3px solid $purp;
+  font-weight: 700;
+  font-size: 16px;
+  display: none;
+  left: 0;
+  right: 0;
+  &__list {
+    width: 100%;
+  }
+  li {
+    display: block;
+    padding: 5px 30px;
+    padding-left: 0;
+  }
+  li + li {
+    border-top: 1px solid  #ccc;
+  }
+  a {
+    width: 100%;
+    padding-left: 30px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translate(50%, -50%);
+      background-image: url("../images/icons/angle-right.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      width: 15px;
+      height: 15px;
+    }
   }
 }

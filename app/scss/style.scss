@@ -100,6 +100,10 @@
   &__text {
     max-width: 600px;
     width: 100%;
+    display: none;
+    &.open {
+      display: block;
+    }
   }
   &__text-title {
     font-size: 32px;
@@ -129,6 +133,7 @@
     color: $purp;
     padding-right: 20px;
     position: relative;
+    display: inline-block;
     &:before {
       content: "";
       position: absolute;
@@ -366,7 +371,7 @@
   position: relative;
   opacity: .5;
 }
-/* VIDEO */
+
 .video {
   position: absolute;
   right: 0;
