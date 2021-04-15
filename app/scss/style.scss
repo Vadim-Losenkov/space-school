@@ -127,14 +127,19 @@
     width: 240px;
     box-shadow: 2px 2px 20px rgba(#000, .1);
     padding: 30px;
+    padding-bottom: 50px;
     border-bottom: 3px solid $purp;
+    position: relative;
   }
   &__item-link {
     color: $purp;
     padding-right: 20px;
     position: relative;
     display: inline-block;
-    &:before {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    &::after {
       content: "";
       position: absolute;
       right: 0;
@@ -227,7 +232,6 @@
     position: relative;
     background-image: url('../images/works-img-3.jpeg');
     @extend %bgi;
-    background-size: contain;
     height: 100%;
     z-index: 1;
     &:hover {
@@ -252,7 +256,8 @@
     background-image: url('../images/works-img-2.jpg');
     @extend %bgi;
     height: 100%;
-    z-index: 1;
+    width: 100%;
+    z-index: 100;
     &:hover {
       background: $purp!important;
       .works-main__none {
