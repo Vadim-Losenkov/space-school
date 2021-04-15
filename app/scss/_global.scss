@@ -97,6 +97,13 @@ body {
   }
 }
 
+.logo img {
+  width: 200px;
+  position: absolute;
+  top: -90px;
+  left: 0;
+}
+
 .button {
   padding: 12px 50px;
   background-color: $purp;
@@ -119,15 +126,18 @@ a.button {
   padding-bottom: 100px;
 }
 
+
 .popup {
   position: relative;
   background: #fff;
   padding: 25px;
-  width: 100%;
+  width: 80%;
   margin: 0 auto;
   border-radius: 8px;
   z-index: 2000;
+  height: 80vh;
 }
+
 
 .scroll-top {
   background-color: $purp;
@@ -201,7 +211,7 @@ a.button {
     }
   }
 }
-
+/*
 .mfp-inline-holder .mfp-content, .mfp-ajax-holder .mfp-content {
   width: auto;
-}
+} */
