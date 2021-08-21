@@ -1,7 +1,0 @@
-
-
-username: Vadim-Losenkov
-password: 
-
-directrory: 
-styles: 
